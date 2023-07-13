@@ -35,14 +35,17 @@
     gap: 30px;
     padding: 25px;
     align-items: center;
+    
 }
 
 .cat-about{
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .catTitle{
+    margin: 0;
     font-size: 36px;
 }
 
@@ -50,12 +53,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 140%;
+    margin: 0;
 }
 
 .breed-select{
     display: block;
     width: 50vw;
-    height: 7vw;
+    height: 40px;
     margin-top: 25px;
     margin-right: auto;
     margin-left: auto; 
@@ -71,4 +75,28 @@
     font-size: 24px;
     font-weight: 500;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .cat-info{
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 30px;
+    }
+    .catImg{
+        width:90vw;
+    }
+    .catTitle{
+        font-size: 24px;
+    }
+    .cat-description{
+        font-size: 16px;
+    }
+    .breed-select{
+        width: 80vw;
+        font-size: 16px;
+    }
+    .cat-about{
+        gap: 16px;
+    }
 }
